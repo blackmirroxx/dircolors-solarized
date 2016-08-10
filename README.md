@@ -171,7 +171,11 @@ To use any of the database files, run this:
 
 To activate the theme for all future shell sessions, copy or link that file to
 `~/.dir_colors`, and include the above command in your `~/.profile` (for bash)
-or `~/.zshrc` (for zsh).
+or `~/.zshrc` (for zsh). For zsh you can add .zshrc. In order to make zsh 
+recognize any changes you MUST ADD in the config alias 
+    
+    ls='ls --color=auto'
+ 
 
 For Ubuntu 14.04 it is sufficient to copy or link database file to `~/.dircolors`.
 Statement in `~/.bashrc` will take care about triggering eval command.
