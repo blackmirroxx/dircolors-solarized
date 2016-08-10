@@ -24,7 +24,7 @@ PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1
 RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 
 # ls colors from github for zsh
-# important to make zsh read any changes ! 
+# important to make zsh read any changes !
 alias ls='ls --color=auto'
 eval `dircolors ~/workspace_dircolor/dircolors-solarized/dircolors.256dark`
 
@@ -34,7 +34,7 @@ eval `dircolors ~/workspace_dircolor/dircolors-solarized/dircolors.256dark`
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # ---------------------------------------------------------------------- colors
 
-# cdr -> change to previous dir  
+# cdr -> change to previous dir
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 add-zsh-hook chpwd chpwd_recent_dirs
 
@@ -47,3 +47,6 @@ autoload colors ; colors
 print "$bg[white]$fg[black]You are a idiot" >> /dev/pts/3
 
 # End of manual config
+
+# config for user : ~/.zshrc
+# config for root : /root/.zshrc
