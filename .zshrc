@@ -18,7 +18,7 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 # manual config 
 
-# colors 
+# colors ---------------------------------------------------------------------- 
 autoload -Uz colors && colors 
 PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}%# "
 RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
@@ -32,6 +32,7 @@ eval `dircolors ~/workspace_dircolor/dircolors-solarized/dircolors.256dark`
 
 # syntax
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# ---------------------------------------------------------------------- colors
 
 # cdr -> change to previous dir  
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
@@ -43,6 +44,6 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 
 # Replace this fucking Escape-Sequences:
 autoload colors ; colors
-print "$bg[cyan]$fg[blue]You are a idiot" >> /dev/pts/3
+print "$bg[white]$fg[black]You are a idiot" >> /dev/pts/3
 
 # End of manual config
